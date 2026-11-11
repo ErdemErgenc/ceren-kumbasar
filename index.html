@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ceren Kumbasar — Stratejist, Yazar, Girişimci</title>
+<meta name="description" content="Ceren Kumbasar: Cube Istanbul kurucusu, gayrimenkul ve siyasi iletişim stratejisti, şehircilik yazarı.">
+<meta name="theme-color" content="#f2ece0">
+<meta property="og:title" content="Ceren Kumbasar">
+<meta property="og:description" content="Bir ev sadece bir ev değildir. Strateji, şehir ve hikâye.">
+<meta property="og:image" content="img/levent.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..600&family=Caveat:wght@500;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap">
+<link rel="preload" as="image" href="img/levent.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231f3a2b'/%3E%3Ctext x='16' y='23' font-family='Georgia' font-size='19' font-style='italic' fill='%23f2ece0' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --paper:#f2ece0; --paper-2:#e9e1d0; --ink:#1c1b18; --ink-2:#5d584c; --rule:#cfc5b0; --grid:rgba(60,50,30,.07);
+  --green:#1f3a2b; --green-2:#2e5340; --red:#d4452a; --red-soft:#f3c9b8; --hi:#efe7d6;
+  --display:"Fraunces",Georgia,serif; --sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace; --hand:"Caveat","Comic Sans MS",cursive;
+  --pad:clamp(16px,4vw,48px); --max:1280px; --ease:cubic-bezier(.2,.7,.2,1);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#171612; --paper-2:#201e19; --ink:#eee7d8; --ink-2:#a8a090; --rule:#3a362e; --grid:rgba(255,245,220,.045);
+  --green:#a9c9b2; --green-2:#7fa58b; --red:#ef6a4b; --red-soft:#4a2419; --hi:#2a2721; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#171612; --paper-2:#201e19; --ink:#eee7d8; --ink-2:#a8a090; --rule:#3a362e; --grid:rgba(255,245,220,.045);
+  --green:#a9c9b2; --green-2:#7fa58b; --red:#ef6a4b; --red-soft:#4a2419; --hi:#2a2721; color-scheme:dark}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background-color:var(--paper);color:var(--ink);font:400 16px/1.6 var(--sans);overflow-x:hidden;-webkit-font-smoothing:antialiased;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:26px 26px}
+a{color:inherit}
+img{display:block;max-width:100%}
+button{font:inherit;color:inherit}
+::selection{background:var(--red);color:#fff}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;z-index:99;background:var(--ink);color:var(--paper);padding:8px 12px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.mono{font:500 11px/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase}
+.hand{font-family:var(--hand);font-weight:500}
+.u{background:linear-gradient(var(--red),var(--red)) 0 92%/100% 3px no-repeat;padding-bottom:2px}
+
+/* ---------- duotone ---------- */
+.duo{position:relative;overflow:hidden;background:var(--hi);isolation:isolate}
+.duo img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.12) brightness(1.04);mix-blend-mode:multiply;transition:filter .7s var(--ease),transform 1.2s var(--ease)}
+.duo::after{content:"";position:absolute;inset:0;background:var(--green);mix-blend-mode:lighten;pointer-events:none;transition:opacity .7s var(--ease)}
+.duo.red::after{background:var(--red)}
+.duo.red{background:#fbe3d7}
+.duo:hover img,.duo:focus-within img{filter:grayscale(0) contrast(1) brightness(1)}
+.duo:hover::after,.duo:focus-within::after{opacity:0}
+.zoom:hover img{transform:scale(1.04)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .duo{background:#d9d2c2}}
+:root[data-theme="dark"] .duo{background:#d9d2c2}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .duo::after{background:#1f3a2b}:root:not([data-theme="light"]) .duo.red::after{background:#b3361f}}
+:root[data-theme="dark"] .duo::after{background:#1f3a2b}:root[data-theme="dark"] .duo.red::after{background:#b3361f}
+
+/* ---------- top bar & nav ---------- */
+.topbar{border-bottom:1px solid var(--ink);background:var(--paper)}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;height:44px}
+.topbar .mono{color:var(--ink-2)}
+.nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:16px}
+.nav .brand{font:italic 600 20px var(--display);text-decoration:none;opacity:0;transform:translateY(6px);transition:.35s var(--ease)}
+.nav.stuck .brand{opacity:1;transform:none}
+.nav ul{display:flex;gap:26px;list-style:none}
+.nav ul a{text-decoration:none;font:500 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);padding:6px 0;background:linear-gradient(var(--red),var(--red)) 0 100%/0 2px no-repeat;transition:background-size .35s var(--ease),color .2s}
+.nav ul a:hover,.nav ul a.active{color:var(--ink);background-size:100% 2px}
+.nav-r{display:flex;gap:8px}
+.ibtn{width:38px;height:38px;border:1px solid var(--ink);border-radius:50%;background:transparent;display:grid;place-items:center;cursor:pointer;transition:background .2s,color .2s}
+.ibtn:hover{background:var(--ink);color:var(--paper)}
+.ibtn svg{width:17px;height:17px}
+.mbtn{display:none}
+.progress{position:absolute;left:0;bottom:-1px;height:2px;background:var(--red);width:100%;transform-origin:0;transform:scaleX(0)}
+@media (max-width:860px){
+  .nav ul{position:absolute;top:56px;left:0;right:0;flex-direction:column;gap:0;background:var(--paper);border-bottom:1px solid var(--ink);padding:6px var(--pad) 18px;opacity:0;pointer-events:none;transform:translateY(-6px);transition:.25s var(--ease)}
+  .nav ul.open{opacity:1;pointer-events:auto;transform:none}
+  .nav ul a{display:block;padding:14px 0;border-bottom:1px solid var(--rule);font-size:13px;color:var(--ink);background:none}
+  .mbtn{display:grid}
+  .topbar .hide-m{display:none}
+}
+
+/* ---------- masthead ---------- */
+.mast{padding:clamp(28px,5vw,56px) 0 0;position:relative}
+.mast-name{font:900 min(9.5vw,148px)/.84 var(--display);letter-spacing:-.045em;text-align:center;font-variation-settings:"opsz" 144;text-transform:uppercase;white-space:nowrap}
+.mast-name span{display:inline-block;opacity:0;transform:translateY(30%) rotate(2deg);animation:in .9s var(--ease) forwards}
+@keyframes in{to{opacity:1;transform:none}}
+.mast-sub{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;border-top:3px double var(--ink);border-bottom:1px solid var(--ink);margin-top:clamp(14px,2vw,22px);padding:10px 0}
+.mast-sub .mono:last-child{text-align:right}
+.mast-sub em{font:italic 400 clamp(16px,1.7vw,20px) var(--display);text-align:center}
+@media (max-width:640px){.mast-name{white-space:normal;font-size:15.5vw;line-height:.88;text-align:left}}
+@media (max-width:700px){.mast-sub{grid-template-columns:1fr;text-align:center}.mast-sub .mono{text-align:center!important}.mast-sub .mono:first-child{display:none}}
+
+/* ---------- ticker ---------- */
+.ticker{display:flex;border-bottom:1px solid var(--ink);overflow:hidden;background:var(--paper)}
+.ticker b{flex:none;position:relative;z-index:2;background:var(--red);color:#fff;font:500 11px var(--mono);letter-spacing:.14em;padding:10px 14px;text-transform:uppercase;display:flex;align-items:center}
+.ticker-track{display:flex;gap:40px;padding:9px 0 9px 24px;width:max-content;animation:tick 55s linear infinite;white-space:nowrap}
+.ticker:hover .ticker-track{animation-play-state:paused}
+.ticker-track a{font:italic 400 15px var(--display);text-decoration:none}
+.ticker-track a::before{content:"✦";font-style:normal;color:var(--red);margin-right:12px;font-size:11px}
+.ticker-track a:hover{text-decoration:underline}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* ---------- front page ---------- */
+.front{display:grid;grid-template-columns:2.1fr 1fr;gap:0;border-bottom:1px solid var(--ink);margin-top:0}
+.lead{padding:28px 28px 32px 0;border-right:1px solid var(--rule)}
+.lead .duo{aspect-ratio:16/9;border:1px solid var(--ink)}
+.kicker{color:var(--red);margin:22px 0 10px}
+.lead h1{font:400 clamp(34px,4.8vw,66px)/1.02 var(--display);letter-spacing:-.025em;max-width:16ch}
+.lead h1 em{color:var(--green);font-weight:300}
+.dek{font:300 clamp(17px,1.6vw,21px)/1.5 var(--display);color:var(--ink-2);margin-top:16px;max-width:52ch}
+.byline{display:flex;gap:22px;margin-top:20px;flex-wrap:wrap;color:var(--ink-2)}
+.byline span b{display:block;color:var(--ink);font:600 13px var(--sans);letter-spacing:0;text-transform:none;margin-top:2px}
+.side{display:flex;flex-direction:column}
+.box{border-bottom:1px solid var(--rule);padding:24px 0 24px 28px}
+.box:last-child{border-bottom:0}
+.box.redline{margin:24px 0 0 28px;padding:18px;border:1px solid var(--red);text-align:center}
+.box h3{font:400 22px/1.2 var(--display)}
+.featured .mono{color:var(--red);display:block;margin-bottom:14px}
+.featured .duo{width:170px;height:170px;border-radius:50%;margin:0 auto 14px}
+.featured .duo img{object-position:50% 35%}
+/* founder portrait: natural colour by default, orange duotone on hover */
+.featured .duo.red{background:#fff;transition:background .6s var(--ease)}
+.featured .duo.red img{filter:none}
+.featured .duo.red::after{opacity:0}
+.featured .duo.red:hover{background:#fbe3d7}
+.featured .duo.red:hover img{filter:grayscale(1) contrast(1.12) brightness(1.04)}
+.featured .duo.red:hover::after{opacity:1}
+.featured p{font-size:14px;color:var(--ink-2)}
+.bignum{font:300 clamp(64px,7vw,96px)/.9 var(--display);color:var(--red);letter-spacing:-.04em}
+.bignum + p{font-size:13px;color:var(--ink-2);margin-top:8px}
+.fact-list{list-style:none;font-size:14px}
+.fact-list li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px dotted var(--rule)}
+.fact-list li span:last-child{font-family:var(--display);font-style:italic;text-align:right}
+@media (max-width:900px){
+  .front{grid-template-columns:1fr}
+  .lead{padding-right:0;border-right:0;border-bottom:1px solid var(--rule)}
+  .box{padding-left:0}.box.redline{margin-left:0}
+  .side{display:grid;grid-template-columns:1fr 1fr;column-gap:24px}
+  .side .featured{grid-column:1/-1}
+}
+@media (max-width:520px){.side{grid-template-columns:1fr}}
+
+/* ---------- sections ---------- */
+section{padding:clamp(64px,9vw,120px) 0;position:relative}
+.sec-label{display:flex;align-items:center;gap:14px;border-bottom:1px solid var(--ink);padding-bottom:12px;margin-bottom:clamp(28px,4vw,48px)}
+.sec-label .mono{color:var(--red)}
+.sec-label h2{font:800 clamp(34px,6vw,84px)/.9 var(--display);letter-spacing:-.04em;text-transform:uppercase;margin-left:auto}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- about (scrapbook) ---------- */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,90px);align-items:start}
+.scrap{position:relative;min-height:640px}
+.polaroid{position:absolute;background:#fbf8f1;padding:12px 12px 46px;box-shadow:0 1px 2px rgba(0,0,0,.08),0 14px 34px -14px rgba(0,0,0,.35);cursor:grab;touch-action:none;user-select:none;-webkit-user-select:none;transition:box-shadow .25s}
+.polaroid:active{cursor:grabbing;box-shadow:0 24px 50px -16px rgba(0,0,0,.45)}
+.polaroid .duo{width:100%;height:100%}
+.polaroid figcaption{position:absolute;left:0;right:0;bottom:8px;text-align:center;font:500 22px var(--hand);color:#2b2a26}
+.polaroid::before{content:"";position:absolute;top:-12px;left:50%;width:96px;height:26px;transform:translateX(-50%) rotate(-3deg);background:rgba(212,69,42,.28);backdrop-filter:blur(1px)}
+.p1{width:min(62%,320px);aspect-ratio:4/4.6;left:0;top:20px;rotate:-4deg}
+.p1 .duo img{object-position:50% 20%}
+.p3{width:min(38%,180px);aspect-ratio:3/4;left:8%;top:380px;rotate:3deg}
+.p3::before{background:rgba(212,69,42,.22);rotate:-8deg}
+.p2{width:min(46%,230px);aspect-ratio:4/5;right:0;top:200px;rotate:5deg}
+.p2 .duo img{object-position:50% 30%}
+.p2::before{background:rgba(31,58,43,.25);rotate:6deg}
+.note{position:absolute;font:500 26px/1.1 var(--hand);color:var(--red);pointer-events:none}
+.note svg{display:block;overflow:visible}
+.note path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.2s .3s var(--ease)}
+.in .note path,.note.in path{stroke-dashoffset:0}
+.n1{right:6%;top:36px;transform:rotate(4deg);text-align:right}
+.n2{left:46%;bottom:30px;color:var(--green)}
+.drag-hint{position:absolute;left:0;bottom:-34px;color:var(--ink-2)}
+.about-text .hello{font:700 clamp(40px,5vw,64px)/1 var(--hand);color:var(--red);transform:rotate(-2deg);display:inline-block;margin-bottom:10px}
+.about-text h3{font:400 clamp(28px,3.2vw,42px)/1.12 var(--display);letter-spacing:-.02em;margin-bottom:22px}
+.about-text h3 em{font-style:italic;color:var(--green)}
+.about-text p{margin-bottom:16px;color:var(--ink-2);font-size:16.5px;line-height:1.75}
+.about-text p strong{color:var(--ink);font-weight:600}
+.dropcap::first-letter{float:left;font:700 4.4em/.8 var(--display);margin:.06em .1em 0 0;color:var(--green)}
+@media (max-width:900px){.about{grid-template-columns:1fr}.scrap{margin-bottom:44px;min-height:520px;max-width:520px;width:100%;margin:0 auto}}
+@media (max-width:520px){.scrap{min-height:560px}.p2{top:170px}.p3{top:330px}.n2{left:44%;bottom:40px}.note{font-size:21px}}
+
+/* ---------- skills cloud ---------- */
+.cloud-wrap{margin-top:clamp(64px,8vw,110px);display:grid;grid-template-columns:1fr 300px;gap:40px;align-items:center}
+.cloud{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:center;gap:4px 18px;line-height:1}
+.cloud button{background:none;border:0;cursor:pointer;padding:4px 2px;transition:color .2s,transform .3s var(--ease)}
+.cloud button:hover,.cloud button[aria-pressed="true"]{color:var(--red);transform:rotate(-2deg) scale(1.04)}
+.w1{font:900 clamp(40px,6vw,84px) var(--display);letter-spacing:-.04em;text-transform:uppercase}
+.w2{font:italic 300 clamp(30px,4vw,54px) var(--display)}
+.w3{font:500 clamp(14px,1.4vw,18px) var(--mono);letter-spacing:.14em;text-transform:uppercase}
+.w4{font:700 clamp(32px,4vw,52px) var(--hand);color:var(--green)}
+.w5{font:600 clamp(22px,2.6vw,34px) var(--sans);letter-spacing:-.02em}
+.cloud-note{border:1px solid var(--ink);background:var(--paper);padding:22px;position:relative;min-height:170px;transform:rotate(1.2deg)}
+.cloud-note::after{content:"";position:absolute;inset:6px -6px -6px 6px;border:1px solid var(--rule);z-index:-1}
+.cloud-note .mono{color:var(--red)}
+.cloud-note h4{font:400 26px/1.15 var(--display);margin:8px 0}
+.cloud-note p{font-size:14.5px;color:var(--ink-2)}
+@media (max-width:900px){.cloud-wrap{grid-template-columns:1fr}.cloud-note{transform:none}}
+
+/* ---------- timeline / archive ---------- */
+.archive{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink)}
+.entry{padding:24px 22px 28px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);position:relative;transition:background .3s}
+.entry:hover{background:var(--paper-2)}
+.entry:nth-child(4n){border-right:0}
+.entry .yr{font:300 clamp(40px,3.6vw,54px)/1 var(--display);white-space:nowrap;letter-spacing:-.03em;color:var(--green)}
+.entry .yr.t{font-size:clamp(26px,2.6vw,34px);font-style:italic;padding:10px 0 8px}
+.entry .mono{color:var(--red);margin:14px 0 6px;display:block}
+.entry h3{font:600 18px/1.3 var(--sans);margin-bottom:8px;letter-spacing:-.01em}
+.entry p{font-size:14.5px;color:var(--ink-2)}
+.entry.hl{background:var(--green);color:var(--paper)}
+.entry.hl .yr,.entry.hl p{color:color-mix(in srgb,var(--paper) 80%,transparent)}
+.entry.hl .yr{color:var(--paper)}
+.entry.hl .mono{color:#f3a58f}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .entry.hl{background:#1f3a2b;color:#eee7d8}}
+:root[data-theme="dark"] .entry.hl{background:#1f3a2b;color:#eee7d8}
+@media (max-width:1100px){.archive{grid-template-columns:repeat(2,1fr)}.entry:nth-child(4n){border-right:1px solid var(--rule)}.entry:nth-child(2n){border-right:0}}
+@media (max-width:560px){.archive{grid-template-columns:1fr}.entry{border-right:0!important}}
+
+/* ---------- photo band ---------- */
+.band{position:relative;height:clamp(320px,52vw,600px);border-block:1px solid var(--ink)}
+.band .duo{position:absolute;inset:0}
+.band .duo img{object-position:50% 60%}
+.band blockquote{position:absolute;left:var(--pad);bottom:clamp(24px,5vw,56px);right:var(--pad);max-width:900px;color:#f6f0e4;font:300 italic clamp(30px,5vw,68px)/1.05 var(--display);letter-spacing:-.02em;text-shadow:0 2px 30px rgba(0,0,0,.35);z-index:2;pointer-events:none}
+.band blockquote cite{display:block;margin-top:16px;font:500 12px var(--mono);font-style:normal;letter-spacing:.14em;text-transform:uppercase;color:#f3c9b8}
+.band .credit{position:absolute;right:12px;top:10px;z-index:2;color:#f6f0e4;opacity:.7;font:400 10px var(--mono)}
+
+/* ---------- stage ---------- */
+.stage{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--ink)}
+.st{padding:22px;border-right:1px solid var(--rule);display:flex;flex-direction:column;gap:10px}
+.st:last-child{border-right:0}
+.st .duo{aspect-ratio:4/3.4;border:1px solid var(--ink);margin-bottom:6px}
+.st .duo img{object-position:50% 25%}
+.st .mono{color:var(--red)}
+.st h3{font:400 clamp(22px,2.2vw,28px)/1.15 var(--display);letter-spacing:-.015em}
+.st p{font-size:14.5px;color:var(--ink-2)}
+.st .q{font-size:22px;line-height:1.15;color:var(--green);margin-top:4px}
+@media (max-width:900px){.stage{grid-template-columns:1fr}.st{border-right:0;border-bottom:1px solid var(--rule);padding:22px 0}}
+
+.onair{margin-top:48px;border-top:3px double var(--ink);padding-top:16px}
+.onair-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:16px;flex-wrap:wrap}
+.onair-head .mono{color:var(--red)}.onair-head .hand{font-size:22px;color:var(--green)}
+.vids{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.vid{text-decoration:none;display:flex;flex-direction:column;gap:8px}
+.vid .duo{aspect-ratio:16/9;border:1px solid var(--ink)}
+.vid .duo::before{content:"";position:absolute;left:50%;top:50%;width:46px;height:46px;margin:-23px;border-radius:50%;background:var(--red) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 7l8 5-8 5z' fill='white'/%3E%3C/svg%3E") center/22px no-repeat;z-index:3;transition:transform .3s var(--ease)}
+.vid:hover .duo::before{transform:scale(1.12)}
+.vid .mono{color:var(--ink-2);font-size:10px}
+.vid b{font:400 16px/1.25 var(--display)}
+.vid:hover b{text-decoration:underline;text-underline-offset:3px}
+.talks{margin-top:48px;border-top:1px solid var(--ink);padding-top:16px}
+.talks h3{color:var(--red);margin-bottom:8px}
+.talks ol{list-style:none}
+.talks li{display:grid;grid-template-columns:80px 1fr auto;gap:16px;align-items:baseline;padding:14px 0;border-bottom:1px dotted var(--rule)}
+.talks time{font:300 italic 22px var(--display);color:var(--green)}
+.talks b{font-weight:600}
+.talks a{font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);text-decoration:none;white-space:nowrap}
+.talks a:hover{color:var(--red)}
+@media (max-width:1000px){.vids{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.vids{grid-template-columns:1fr 1fr;gap:12px}.vid b{font-size:14px}.talks li{grid-template-columns:56px 1fr;gap:10px}.talks a{grid-column:2}}
+
+/* ---------- classifieds (projects) ---------- */
+.ilan-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:22px}
+.ilan-head p{max-width:52ch;color:var(--ink-2)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--ink);background:transparent;padding:7px 14px;border-radius:999px;font:500 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:.2s}
+.chip:hover{background:var(--paper-2)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.ilanlar{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:3px double var(--ink);border-left:1px solid var(--ink)}
+.ilan{border-right:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:18px 18px 20px;min-height:180px;display:flex;flex-direction:column;gap:8px;background:var(--paper);transition:background .25s,color .25s;position:relative}
+.ilan:hover{background:var(--ink);color:var(--paper)}
+.ilan:hover .mono,.ilan:hover dd,.ilan:hover dt{color:inherit}
+.ilan .mono{color:var(--red);display:flex;justify-content:space-between}
+.ilan h3{font:800 clamp(22px,2.2vw,28px)/1.02 var(--display);letter-spacing:-.025em;text-transform:uppercase}
+.ilan .loc{font:italic 400 15px var(--display);color:var(--ink-2)}
+.ilan:hover .loc{color:inherit;opacity:.8}
+.ilan dl{margin-top:auto;display:grid;grid-template-columns:auto 1fr;gap:2px 10px;font-size:13px}
+.ilan dt{color:var(--ink-2);font:400 10.5px/1.9 var(--mono);text-transform:uppercase;letter-spacing:.08em}
+.ilan dd{font-weight:500}
+.ilan.big{grid-column:span 2;grid-row:span 2;padding:24px}
+.ilan.big h3{font-size:clamp(36px,4.6vw,64px)}
+.ilan.big .stamp{position:absolute;right:18px;top:46px;font:700 22px/1 var(--hand);color:var(--red);border:2px solid currentColor;border-radius:50%;width:96px;height:96px;display:grid;place-items:center;text-align:center;transform:rotate(12deg)}
+.ilan.hide{display:none}
+.ilan.ad{text-decoration:none;border-style:dashed;background:transparent}
+.ilan.ad:hover .hand{color:#fff!important}
+@media (max-width:1000px){.ilanlar{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.ilanlar{grid-template-columns:1fr}.ilan.big{grid-column:auto;grid-row:auto}.ilan{min-height:0}.ilan.big .stamp{width:76px;height:76px;font-size:18px;top:18px}}
+.src{margin-top:14px;color:var(--ink-2)}
+
+/* ---------- writing (magazine grid) ---------- */
+.mag{display:grid;grid-template-columns:repeat(12,1fr);gap:0;border-top:1px solid var(--ink)}
+.art{grid-column:span 4;padding:22px 22px 26px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);text-decoration:none;display:flex;flex-direction:column;gap:10px;transition:background .3s}
+.art:hover{background:var(--paper-2)}
+.art .duo{aspect-ratio:4/3;margin-bottom:6px}
+.art .mono{display:flex;justify-content:space-between;color:var(--ink-2)}
+.art .mono b{color:var(--red);font-weight:500}
+.art h3{font:400 clamp(22px,2vw,27px)/1.12 var(--display);letter-spacing:-.015em}
+.art:hover h3{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+.art p{font-size:14.5px;color:var(--ink-2)}
+.art .go{margin-top:auto;font:500 11px var(--mono);letter-spacing:.12em;text-transform:uppercase;display:flex;gap:6px;align-items:center}
+.art.wide{grid-column:span 8}
+.art.wide{display:grid;grid-template-columns:1.3fr 1fr;gap:22px;align-content:start}
+.art.wide .duo{aspect-ratio:auto;height:100%;min-height:300px;margin:0}
+.art.wide h3{font-size:clamp(30px,3.2vw,44px)}
+.art.wide .txt{display:flex;flex-direction:column;gap:10px}
+.art.txtonly{background:transparent}
+.art.txtonly h3{font-size:clamp(24px,2.3vw,30px)}
+.art.red{border:1px solid var(--red);margin:-1px 0 0 -1px}
+.art.red .mono b{color:var(--red)}
+.art.hide{display:none}
+@media (max-width:1000px){.art,.art.wide{grid-column:span 6}.art.wide{display:flex}.art.wide .duo{aspect-ratio:4/3;min-height:0}}
+@media (max-width:600px){.art,.art.wide{grid-column:1/-1;border-right:0;padding-left:0;padding-right:0}}
+.more-row{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:28px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 20px;border:1px solid var(--ink);border-radius:999px;text-decoration:none;font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;background:transparent;cursor:pointer;transition:background .25s,color .25s,transform .25s}
+.btn:hover{background:var(--ink);color:var(--paper);transform:translateY(-2px)}
+.btn.fill{background:var(--paper);color:var(--green);border-color:var(--paper)}
+.btn.fill:hover{background:var(--red);color:#fff;border-color:var(--red)}
+.btn svg{width:14px;height:14px}
+
+/* ---------- contact / footer ---------- */
+.contact{background:#1f3a2b;color:#f2ece0;position:relative;overflow:hidden;padding-bottom:0}
+.contact .checker{position:absolute;right:0;top:0;width:150px;height:150px;display:grid;grid-template-columns:repeat(3,1fr);pointer-events:none}
+.contact .checker i{background:var(--paper)}
+.contact .checker i.x{background:transparent}
+.contact .hand{font-size:clamp(28px,3vw,40px);color:#f3a58f;display:inline-block;transform:rotate(-2deg)}
+.contact h2{font:300 italic clamp(44px,8vw,120px)/.95 var(--display);letter-spacing:-.035em;margin:10px 0 36px;max-width:12ch}
+.contact .row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.contact .btn{border-color:#f2ece0;color:#f2ece0}
+.contact .btn:hover{background:#f2ece0;color:#1f3a2b}
+.contact .btn.fill{background:#f2ece0;color:#1f3a2b}
+.contact .btn.fill:hover{background:var(--red);color:#fff;border-color:var(--red)}
+.foot{margin-top:clamp(64px,8vw,110px);border-top:1px solid rgba(242,236,224,.25);padding:28px 0 36px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;font-size:14px}
+.foot h4{font:500 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:#f3a58f;margin-bottom:10px}
+.foot a{text-decoration:none;opacity:.85;display:block;padding:3px 0}
+.foot a:hover{opacity:1;text-decoration:underline}
+.foot small{display:block;font-size:12px;opacity:.7;line-height:1.5}
+.credits{font-size:11px;opacity:.6;padding-bottom:28px;line-height:1.6}
+.credits a{display:inline;padding:0}
+@media (max-width:820px){.foot{grid-template-columns:1fr 1fr}.contact .checker{width:90px;height:90px}}
+.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,16px);background:var(--ink);color:var(--paper);padding:11px 18px;border-radius:999px;font:500 12px var(--mono);letter-spacing:.08em;opacity:0;transition:.3s;pointer-events:none;z-index:80}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}.mast-name span{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">İçeriğe geç</a>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="mono" id="today">İstanbul</span>
+    <span class="mono hide-m">Sayı 01 · Kişisel Yayın</span>
+    <span class="mono">Strateji · Şehir · İletişim</span>
+  </div>
+</div>
+
+<nav class="nav" id="nav" aria-label="Ana menü">
+  <div class="wrap">
+    <a class="brand" href="#top">Ceren Kumbasar</a>
+    <ul id="menu">
+      <li><a href="#hakkinda">Hakkında</a></li>
+      <li><a href="#arsiv">Arşiv</a></li>
+      <li><a href="#sahne">Sahne</a></li>
+      <li><a href="#ilanlar">Projeler</a></li>
+      <li><a href="#yazilar">Yazılar</a></li>
+      <li><a href="#iletisim">İletişim</a></li>
+    </ul>
+    <div class="nav-r">
+      <button class="ibtn" id="theme" aria-label="Açık/koyu tema"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg></button>
+      <button class="ibtn mbtn" id="mbtn" aria-label="Menü" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 8h16M4 16h16"/></svg></button>
+    </div>
+  </div>
+  <span class="progress" id="progress" aria-hidden="true"></span>
+</nav>
+
+<main id="main">
+<header class="mast" id="top">
+  <div class="wrap">
+    <h1 class="mast-name" aria-label="Ceren Kumbasar" id="mastName">Ceren Kumbasar</h1>
+    <div class="mast-sub">
+      <span class="mono">Est. 2005 · Cube İstanbul</span>
+      <em>“Bir ev sadece bir ev değildir.”</em>
+      <span class="mono">Gayrimenkul · Siyasi İletişim</span>
+    </div>
+  </div>
+</header>
+
+<div class="ticker" aria-label="Öne çıkan yazılar">
+  <b>Köşeden</b>
+  <div class="ticker-track" id="ticker"></div>
+</div>
+
+<div class="wrap">
+  <div class="front">
+    <article class="lead reveal">
+      <figure class="duo zoom"><img src="img/levent.jpg" alt="Levent'in gökdelenleri, İstanbul" width="1200" height="674" fetchpriority="high"></figure>
+      <p class="mono kicker">Manşet · Profil</p>
+      <h2 class="lead-h" style="font:400 clamp(34px,4.8vw,66px)/1.02 var(--display);letter-spacing:-.025em;max-width:17ch">Binalara konsept, şehirlere <em style="color:var(--green);font-weight:300">vicdan</em> arayan bir stratejist.</h2>
+      <p class="dek">Soyak, Sinpaş ve Ağaoğlu'nun pazarlama masalarından Cube İstanbul'u kurmaya, köşe yazılarına, siyasi iletişime ve Londra'dan gelen bir ödüle uzanan bir yol. Ceren Kumbasar yirmi yıldır aynı soruyu soruyor: Bir proje insanlara ne anlatıyor?</p>
+      <div class="byline mono">
+        <span>Doğum yeri<b>Ankara</b></span>
+        <span>Büyüdüğü şehir<b>Samsun</b></span>
+        <span>Üs<b>İstanbul</b></span>
+      </div>
+    </article>
+    <aside class="side">
+      <div class="box featured redline reveal">
+        <span class="mono">Kurucu &amp; Başkan</span>
+        <figure class="duo red"><img src="img/portre.jpg" alt="Ceren Kumbasar Mumay portresi" width="400" height="400" loading="lazy" decoding="async"></figure>
+        <h3>Ceren Kumbasar</h3>
+        <p>Cube İstanbul kurucu başkanı; stratejist ve siyasi iletişimci. Hürriyet, Vatan, Cumhuriyet eski yazarı.</p>
+      </div>
+      <div class="box reveal">
+        <div class="bignum" data-count="300">300</div>
+        <p>2008'den bu yana verdiği satış eğitimleriyle sektöre kazandırdığı gayrimenkul profesyoneli.</p>
+      </div>
+      <div class="box reveal">
+        <p class="mono" style="color:var(--red);margin-bottom:8px">Künye</p>
+        <ul class="fact-list">
+          <li><span>Eğitim</span><span>Marmara Ü., İşletme</span></li>
+          <li><span>Diller</span><span>İngilizce, Fransızca</span></li>
+          <li><span>Kalem</span><span>Hürriyet, Vatan, Cumhuriyet</span></li>
+          <li><span>Bölge</span><span>Türkiye, Orta Doğu, Körfez</span></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<section id="hakkinda">
+  <div class="wrap">
+    <div class="sec-label reveal"><span class="mono">Bölüm 01</span><h2>Hakkında</h2></div>
+    <div class="about">
+      <div class="scrap reveal" id="scrap">
+        <figure class="polaroid p1" data-drag><div class="duo"><img src="img/portre-powerup.jpg" alt="Ceren Kumbasar Mumay, eğitmen portresi" width="550" height="500" loading="lazy" decoding="async"></div><figcaption>kürsüde, bugün</figcaption></figure>
+        <figure class="polaroid p2" data-drag><div class="duo red"><img src="img/zirve.jpg" alt="GSÜ İletişim Zirvesi afişi: Ceren Kumbasar, Siyasal İletişimsizlik" width="512" height="640" loading="lazy" decoding="async"></div><figcaption>zirvede konuşmacı</figcaption></figure>
+        <figure class="polaroid p3" data-drag><div class="duo"><img src="img/award.jpg" alt="Prime London ödülü: Top-Selling MENA Agent of the Year for Berkeley Capital 2025/26" width="300" height="400" loading="lazy" decoding="async"></div><figcaption>2025/26 ✦</figcaption></figure>
+        <div class="note n1">sahne + beden dili<br>= iyi bir sunum!
+          <svg width="90" height="60" viewBox="0 0 90 60" style="margin:4px 0 0 auto"><path pathLength="1" d="M80 4 C 70 30, 40 44, 10 50 M10 50 l12 -10 M10 50 l14 4"/></svg>
+        </div>
+        <div class="note n2">
+          <svg width="80" height="56" viewBox="0 0 80 56"><path pathLength="1" d="M8 52 C 18 24, 40 10, 70 8 M70 8 l-12 -6 M70 8 l-10 10"/></svg>
+          Londra'dan ödül!
+        </div>
+        <span class="drag-hint mono">↔ Fotoğrafları sürükleyebilirsiniz</span>
+      </div>
+      <div class="about-text">
+        <span class="hello reveal">Merhaba!</span>
+        <h3 class="reveal">Bir projenin <em>hikâyesini</em> bulmadan satışı konuşmam.</h3>
+        <p class="dropcap reveal">Ceren Kumbasar, yalnızca inşaat sektörüne <strong>stratejik pazarlama, konsept ve satış</strong> danışmanlığı veren Cube Istanbul'un kurucusu ve başkanı. Ondan önce Soyak, Sinpaş ve Ağaoğlu'nda pazarlama müdürü, müdür yardımcısı ve direktör olarak çalıştı. Ekibiyle birlikte Türkiye'de geniş kitlelerin tanıdığı projelere imza attı.</p>
+        <p class="reveal">2007'den beri yabancı yatırımcıları Türkiye'ye çekmek için çalışıyor; Orta Doğu ve Körfez ülkelerindeki inşaat projelerine danışmanlık verdi. 2008'den bu yana anlattığı gayrimenkul satışı derslerinden <strong>300'ü aşkın profesyonel</strong> çıktı. Doğu Ataşehir'deki 269 konutluk Canan Residence'ın satış ve pazarlama sorumlusuydu; 2021'de Avcılar Belediyesi şirketi AVBEL'de genel müdür yardımcısı olarak depreme yönelik “Avcılar Modeli”ni TBMM'ye sundu.</p>
+        <p class="reveal">Marmara Üniversitesi İşletme mezunu. Öğrenciliğinde beden dili, oyunculuk ve performans sanatları üzerine dersler aldı; sunuma ve sahneye olan yakınlığı oradan geliyor. Hürriyet, Vatan ve Cumhuriyet'te yazdı; Cumhuriyet'te emlak sayfası editörüydü. Bugün Yeni Arayış'ta siyasal iletişim yazıyor. 2023'te bir siyasi partinin yeni kurulan dijital ve sosyal medya biriminin başına <strong>stratejist ve siyasi iletişim uzmanı</strong> olarak getirildi. Bugün televizyonlarda siyasal iletişim yorumcusu olarak da izleniyor.</p>
+        <p class="reveal">Gayrimenkuldeki uluslararası işi de sürüyor: Londra merkezli Prime London ve Berkeley Capital, onu <strong>2025/26 yılının en çok satış yapan MENA temsilcisi</strong> seçti.</p>
+      </div>
+    </div>
+
+    <div class="cloud-wrap">
+      <div class="cloud reveal" id="cloud" role="group" aria-label="Uzmanlık alanları">
+        <button class="w3" data-k="0">Fizibilite</button>
+        <button class="w1" data-k="1">Konsept</button>
+        <button class="w4" data-k="2">hikâye</button>
+        <button class="w5" data-k="3">Satış yönetimi</button>
+        <button class="w2" data-k="4">şehircilik</button>
+        <button class="w3" data-k="5">Medya planlama</button>
+        <button class="w1" data-k="6">Strateji</button>
+        <button class="w2" data-k="7">siyasi iletişim</button>
+        <button class="w5" data-k="8">Eğitim</button>
+        <button class="w4" data-k="9">yatırımcı</button>
+        <button class="w3" data-k="10">Kamu ilişkileri</button>
+      </div>
+      <div class="cloud-note reveal" aria-live="polite">
+        <span class="mono" id="cnK">Bir kelimeye dokunun</span>
+        <h4 id="cnT">Ne yapar?</h4>
+        <p id="cnP">Soldaki kelimelerin her biri Ceren Kumbasar'ın çalışma alanlarından birini anlatıyor.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="arsiv" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-label reveal"><span class="mono">Bölüm 02</span><h2>Arşiv</h2></div>
+    <div class="archive">
+      <article class="entry reveal"><div class="yr t">Öğrencilik</div><span class="mono">Marmara Üniversitesi</span><h3>İşletme ve sahne</h3><p>İşletme eğitiminin yanında beden dili, oyunculuk ve performans sanatları dersleri.</p></article>
+      <article class="entry reveal"><div class="yr t">Kurumsal</div><span class="mono">Soyak · Sinpaş · Ağaoğlu</span><h3>Pazarlamanın mutfağı</h3><p>Büyük konut üreticilerinde pazarlama müdürü, müdür yardımcısı ve direktör.</p></article>
+      <article class="entry hl reveal"><div class="yr">2005</div><span class="mono">Kuruluş</span><h3>Cube İstanbul</h3><p>İstanbul'da kurulan gayrimenkul proje geliştirme ve danışmanlık merkezi. Abu Dhabi ve Tahran ofisleri, 2012'de Ankara şubesi.</p></article>
+      <article class="entry reveal"><div class="yr">2007</div><span class="mono">Canan Residence</span><h3>Satış ve pazarlama</h3><p>Doğu Ataşehir'deki 269 konutluk Canan Residence'ın satış ve pazarlama sorumlusu (2007–2010). Aynı yıl yabancı yatırımcı ve Körfez danışmanlıkları başlıyor.</p></article>
+      <article class="entry reveal"><div class="yr">2008</div><span class="mono">Eğitmenlik</span><h3>Satışı öğretmek</h3><p>Gayrimenkul satışı eğitimleri; 300'ü aşkın profesyonel. Bugün PowerUp Academy'de iletişim ve ikna eğitmeni.</p></article>
+      <article class="entry reveal"><div class="yr">2013</div><span class="mono">Kürsüde</span><h3>Lüks pazarlama &amp; stadyumlar</h3><p>Bilgi Üniversitesi'nde "Luxury Marketing" oturumu; Dünya Stadyum Kongresi'nde konuşmacı. 2014'te SLUSH Beyrut'ta girişim koçu.</p></article>
+      <article class="entry reveal"><div class="yr">2015</div><span class="mono">Cumhuriyet</span><h3>Emlak sayfası editörü</h3><p>Hürriyet Emlak ve Vatan'ın ardından Cumhuriyet'te emlak sayfası editörü ve köşe yazarı. Temmuz 2016'da gazeteden istifa eden ekipteydi.</p></article>
+      <article class="entry reveal"><div class="yr t">Sivil toplum</div><span class="mono">İSGİD · TUGİK</span><h3>Kurullarda</h3><p>İstanbul Genç Girişimciler Derneği yönetim kurulu üyesi; TUGİK Yüksek İstişare Kurulu genel sekreteri; Enerji Verimliliği Derneği danışmanı.</p></article>
+      <article class="entry hl reveal"><div class="yr">2021</div><span class="mono">AVBEL · Avcılar</span><h3>Avcılar Modeli</h3><p>Avcılar Belediyesi şirketi AVBEL'de genel müdür yardımcısı; depreme yönelik dönüşüm modelini TBMM Deprem Araştırma Komisyonu'na sundu.</p></article>
+      <article class="entry reveal"><div class="yr">2023</div><span class="mono">Siyasal iletişim</span><h3>Dijital ve sosyal medya</h3><p>Bir siyasi partinin yeni kurulan dijital ve sosyal medya politikaları biriminin başına stratejist olarak getirildi.</p></article>
+      <article class="entry reveal"><div class="yr">2025</div><span class="mono">GSÜ İletişim Zirvesi</span><h3>Siyasal iletişimsizlik</h3><p>12 Aralık'ta Galatasaray Üniversitesi İletişim Kulübü'nün zirvesinde, Aydın Doğan Oditoryumu'nda konuşmacı.</p></article>
+      <article class="entry hl reveal"><div class="yr">2025/26</div><span class="mono">Prime London · Berkeley</span><h3>Yılın MENA temsilcisi</h3><p>Berkeley Capital için en çok satış yapan MENA temsilcisi ödülü.</p></article>
+    </div>
+  </div>
+</section>
+
+<div class="band">
+  <figure class="duo"><img src="img/bogaz.jpg" alt="Boğaziçi Köprüsü ve İstanbul" width="1200" height="803" loading="lazy" decoding="async"></figure>
+  <blockquote class="reveal">Şehir senin değildir; ona ait olursun, sahibi olmazsın.<cite>— “Gezi'yi anlamak” yazısından, serbest aktarım</cite></blockquote>
+  <span class="credit">Foto: SALT Research</span>
+</div>
+
+<section id="sahne">
+  <div class="wrap">
+    <div class="sec-label reveal"><span class="mono">Bölüm 03</span><h2>Sahne &amp; Ekran</h2></div>
+    <div class="stage">
+      <article class="st reveal"><figure class="duo red zoom"><img src="img/zirve.jpg" alt="GSÜ İletişim Zirvesi afişi" width="512" height="640" loading="lazy" decoding="async"></figure><span class="mono">Konferans · 12 Aralık 2025</span><h3>“Siyasal İletişimsizlik”</h3><p>Galatasaray Üniversitesi İletişim Kulübü'nün zirvesinde, Aydın Doğan Oditoryumu.</p></article>
+      <article class="st reveal"><figure class="duo zoom"><img style="object-position:0 40%" src="img/tv.jpg" alt="Ceren Kumbasar Mumay bir televizyon panelinde siyasal iletişimci olarak" width="360" height="210" loading="lazy" decoding="async"></figure><span class="mono">Televizyon · 2026</span><h3>Siyasal iletişim yorumcusu</h3><p>Haber kanallarındaki tartışma programlarında seçmen davranışı ve muhalefetin iletişim dili üzerine yorumlar.</p><span class="hand q">“Muhalefet, bütün olanları seçmenin gözünde anlamlandırmak zorunda.”</span></article>
+      <article class="st reveal"><figure class="duo zoom"><img src="img/award.jpg" alt="Prime London ödülü" width="300" height="400" loading="lazy" decoding="async"></figure><span class="mono">Ödül · Londra</span><h3>Top-Selling MENA Agent of the Year</h3><p>Prime London tarafından Berkeley Capital için verilen 2025/26 ödülü: Orta Doğu ve Kuzey Afrika'dan yatırımcıyı Londra gayrimenkulüyle buluşturmak.</p></article>
+    </div>
+    <div class="onair reveal">
+      <div class="onair-head"><span class="mono">Yayın akışı</span><span class="hand">tıklayın, YouTube'da açılır →</span></div>
+      <div class="vids" id="vids"></div>
+    </div>
+    <div class="talks reveal">
+      <h3 class="mono">Kürsüden</h3>
+      <ol>
+        <li><time>2013</time><span><b>İstanbul Bilgi Üniversitesi</b> · Lüks Marka Yönetimi Programı, “Luxury Marketing” oturumu</span><a href="https://www.bilgi.edu.tr/tr/etkinlik/5764/bilgi-ogrenci-konseyi-kariyer-calismalari-luks-marka-yonetimi-programi/" target="_blank" rel="noopener">kaynak ↗</a></li>
+        <li><time>2013</time><span><b>Dünya Stadyum Kongresi</b> · Türkiye'de inşaat sektörü ve yabancı yatırımcının bakışı</span><a href="https://www.emlaktasondakika.com/sektorden-haberler/ceren-kumbasar-dunya-stadyum-kongresi-nde-konusacak-53403.html" target="_blank" rel="noopener">kaynak ↗</a></li>
+        <li><time>2014</time><span><b>SLUSH &amp; Startup Sauna, Beyrut</b> · Geri bildirim paneli, SLUSH İstanbul koçu</span><a href="https://www.wamda.com/index.php/2014/04/slush-startup-sauna-pitching-" target="_blank" rel="noopener">kaynak ↗</a></li>
+        <li><time>2021</time><span><b>TBMM Deprem Araştırma Komisyonu</b> · “Avcılar Modeli” sunumu</span><a href="https://www.tbmm.gov.tr/develop/owa/komisyon_tutanaklari.mv_goruntule?pTutanakId=40781" target="_blank" rel="noopener">kaynak ↗</a></li>
+        <li><time>2025</time><span><b>GSÜ İletişim Zirvesi</b> · “Siyasal İletişimsizlik”</span></li>
+        <li><time>Bugün</time><span><b>PowerUp Academy</b> · “Şahane Yenilgiler”, “Evet Mühendisliği: İkna ve Müzakere”, “Sahne Hâkimiyeti” konuşma ve atölyeleri</span><a href="https://powerupacademy.tr/egitmenler/ceren-kumbasar-mumay/" target="_blank" rel="noopener">kaynak ↗</a></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section id="ilanlar">
+  <div class="wrap">
+    <div class="sec-label reveal"><span class="mono">Bölüm 04</span><h2>İlanlar</h2></div>
+    <div class="ilan-head reveal">
+      <p>Çalıştığı ve Cube İstanbul portföyündeki projeler, gazetenin seri ilanlar sayfası gibi. Kutuların üzerine gelin; türe göre süzün.</p>
+      <div class="chips" role="group" aria-label="Projeleri filtrele" id="pChips">
+        <button class="chip" data-f="all" aria-pressed="true">Tümü</button>
+        <button class="chip" data-f="karma" aria-pressed="false">Karma</button>
+        <button class="chip" data-f="konut" aria-pressed="false">Konut</button>
+        <button class="chip" data-f="villa" aria-pressed="false">Villa</button>
+        <button class="chip" data-f="donusum" aria-pressed="false">Dönüşüm</button>
+      </div>
+    </div>
+    <div class="ilanlar reveal" id="ilanList"></div>
+    <p class="src mono">Kaynaklar: Cube Istanbul'un arşivlenmiş sitesi (2012–2013), Milliyet (Canan Residence künyesi, 2011), TBMM tutanağı (2021). Filtreler yalnızca türü bilinen projelerde çalışır.</p>
+  </div>
+</section>
+
+<section id="yazilar" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-label reveal"><span class="mono">Bölüm 05</span><h2>Yazılar</h2></div>
+    <div class="ilan-head reveal">
+      <p>Cumhuriyet, Vatan ve Yeni Arayış'taki köşelerinden seçmeler. Görsellerin üzerine gelince renkleniyor.</p>
+      <div class="chips" role="group" aria-label="Yazıları filtrele" id="cChips">
+        <button class="chip" data-f="all" aria-pressed="true">Tümü</button>
+        <button class="chip" data-f="sehir" aria-pressed="false">Şehircilik</button>
+        <button class="chip" data-f="yatirim" aria-pressed="false">Yatırım</button>
+        <button class="chip" data-f="sektor" aria-pressed="false">Sektör</button>
+        <button class="chip" data-f="siyaset" aria-pressed="false">Siyaset</button>
+      </div>
+    </div>
+    <div class="mag" id="mag"></div>
+    <div class="more-row reveal">
+      <span class="hand" style="font-size:26px;color:var(--green)">daha fazlası arşivde →</span>
+      <a class="btn" href="https://www.cumhuriyet.com.tr/yazarlar/ceren-kumbasar" target="_blank" rel="noopener">Tüm yazılar <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12 12 4M5 4h7v7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="iletisim">
+  <div class="checker" aria-hidden="true"><i class="x"></i><i></i><i class="x"></i><i></i><i class="x"></i><i></i><i class="x"></i><i class="x"></i><i></i></div>
+  <div class="wrap">
+    <span class="hand reveal">bir kahve içelim mi?</span>
+    <h2 class="reveal">Birlikte bir hikâye yazalım.</h2>
+    <div class="row reveal">
+      <!-- Gerçek e-posta adresini buraya yazın (href ve data-mail) -->
+      <a class="btn fill" id="mail" href="mailto:merhaba@cerenkumbasar.com" data-mail="merhaba@cerenkumbasar.com">merhaba@cerenkumbasar.com</a>
+      <button class="btn" id="copy" type="button">Kopyala</button>
+    </div>
+    <div class="foot">
+      <div><h4>Ceren Kumbasar</h4><small>Stratejist, yazar ve Cube Istanbul kurucu başkanı. İstanbul.</small></div>
+      <div><h4>Sayfalar</h4><a href="#hakkinda">Hakkında</a><a href="#arsiv">Arşiv</a><a href="#sahne">Sahne</a><a href="#ilanlar">Projeler</a><a href="#yazilar">Yazılar</a></div>
+      <div><h4>Takip edin</h4><a href="https://www.instagram.com/cerenkumbasar/" target="_blank" rel="noopener">Instagram · @cerenkumbasar</a><a href="https://x.com/cerenkumbasar" target="_blank" rel="noopener">X · @cerenkumbasar</a><a href="https://yeniarayis.com/yazarlar/ceren-kumbasar-mumay-99" target="_blank" rel="noopener">Yeni Arayış köşesi</a><a href="https://powerupacademy.tr/egitmenler/ceren-kumbasar-mumay/" target="_blank" rel="noopener">PowerUp Academy</a><a href="https://www.cumhuriyet.com.tr/yazarlar/ceren-kumbasar" target="_blank" rel="noopener">Cumhuriyet köşesi</a></div>
+      <div><h4>Künye</h4><small>© <span id="yr"></span> Ceren Kumbasar<br>Tüm hakları saklıdır.</small></div>
+    </div>
+    <p class="credits" id="credits"></p>
+  </div>
+</section>
+</main>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(()=>{
+const $=(s,c=document)=>c.querySelector(s),$$=(s,c=document)=>[...c.querySelectorAll(s)];
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const root=document.documentElement;
+$('#yr').textContent=new Date().getFullYear();
+$('#today').textContent='İstanbul · '+new Date().toLocaleDateString('tr-TR',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+
+/* masthead letters */
+const mn=$('#mastName');let n=0;mn.innerHTML=mn.textContent.split(' ').map(w=>`<b style="font:inherit;white-space:nowrap">${[...w].map(c=>`<span aria-hidden="true" style="animation-delay:${(n++)*35}ms">${c}</span>`).join('')}</b>`).join(' ');
+
+/* theme */
+try{const t=localStorage.getItem('ck-theme');if(t)root.dataset.theme=t}catch(e){}
+$('#theme').onclick=()=>{const d=root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;root.dataset.theme=d?'light':'dark';try{localStorage.setItem('ck-theme',root.dataset.theme)}catch(e){}};
+
+/* menu */
+const menu=$('#menu'),mb=$('#mbtn');
+mb.onclick=()=>{const o=menu.classList.toggle('open');mb.setAttribute('aria-expanded',o)};
+$$('#menu a').forEach(a=>a.onclick=()=>{menu.classList.remove('open');mb.setAttribute('aria-expanded','false')});
+
+/* columns data: titles & dates from Cumhuriyet; summaries paraphrased */
+const C=[
+ ['Mansur Yavaş ve stratejik belirsizliğin sınırı','','siyaset','Siyasette belirsizliğin ne zaman strateji, ne zaman risk olduğu üzerine bir siyasal iletişim okuması.','https://yeniarayis.com/yazi/mansur-yavas-ve-stratejik-belirsizligin-siniri-22188','','','Yeni Arayış'],
+ ['Rant vergisi sektörü nasıl etkiler?','','yatirim','Değer artışını vergilemek adil görünür; ama önce konut ihtiyacı olana yaşanabilir yerler, sonra rantçıdan vergi.','https://www.yeniemlak.com/ceren-kumbasar-rant-vergisi-sektoru-nasil-etkiler-8537-gayrimenkul-rehberi','','','Vatan'],
+ ['Ihlamur\'a dokunma','2016-07-03','sehir','Beşiktaş Ihlamur Parkı için alınan kararlar ve şehrin nefes alanları.','ihlamura-dokunma-562025','ihlamur','Ihlamur Kasrı, Beşiktaş'],
+ ['Gezi\'yi anlamak','2016-05-29','sehir','Bir şehre ait olmak ile ona sahip olmak arasındaki fark.','geziyi-anlamak-541824','gezi','Taksim Gezi Parkı, 2013'],
+ ['Demokratik şehircilik','2016-06-25','sehir','Kontrolsüz konut büyümesi karşısında şehir planlamasının değeri.','demokratik-sehircilik-557521'],
+ ['Şeffaf olmak bu kadar zor mu?','2016-05-22','sehir','Harbiye Açıkhava Tiyatrosu tartışması ve kamusal kararlarda şeffaflık.','seffaf-olmak-bu-kadar-zor-mu-537823','harbiye','Cemil Topuzlu Açıkhava Tiyatrosu'],
+ ['Kentsel dönüşüm kavramını dönüştürmeli','2015-11-08','sehir','Kentsel dönüşümün yalnızca yık-yap olarak anlaşılmasına itiraz.','kentsel-donusum-kavramini-donusturmeli-409701','fikirtepe','Fikirtepe\'de kentsel dönüşüm'],
+ ['Ne felsefe var ne mimari','2016-05-15','sektor','"Lokomotif sektör" söyleminin ardında kaybolan tasarım ve düşünce.','ne-felsefe-var-ne-mimari-533834','insaat','Harbiye\'de bir şantiye'],
+ ['Geleceğe yatırım: Adalet','2015-11-29','yatirim','Gayrimenkul ancak sağlıklı bir ülkede gerçek bir yatırımdır.','gelecege-yatirim-adalet-435773'],
+ ['Şehirler ruhunu kaybediyor, biz vergiden kazanıyoruz','2015-11-22','sehir','Sektörün önündeki engeller ve şehirlerin silinen karakteri.','sehirler-ruhunu-kaybediyor-biz-vergiden-kazaniyoruz-427653','galata','Karaköy ve Galata Kulesi'],
+ ['Satmak ya da satmamak','2015-09-27','yatirim','Mülkü elde tutmak mı, değerini bulduğunda satmak mı?','satmak-ya-da-satmamak-376587'],
+ ['2016\'da başarının ABC\'si','2016-01-03','sektor','Yeni yıla umutla giren inşaat sektörü için başarının koşulları.','2016da-basarinin-abcsi-457809'],
+ ['Doğru yatırım için püf noktaları','2015-09-05','yatirim','Doğru projeyi seçerken yatırımcının bakması gerekenler.','dogru-yatirim-icin-puf-noktalari-361775'],
+];
+const T={sehir:'Şehircilik',yatirim:'Yatırım',sektor:'Sektör',siyaset:'Siyaset'};
+const base='https://www.cumhuriyet.com.tr/yazarlar/ceren-kumbasar/';
+const href=c=>c[4].startsWith('http')?c[4]:base+c[4];
+const fmt=d=>new Date(d).toLocaleDateString('tr-TR',{day:'numeric',month:'short',year:'numeric'});
+const arrow='<svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12 12 4M5 4h7v7"/></svg>';
+$('#ticker').innerHTML=[...C,...C].map(c=>`<a href="${href(c)}" target="_blank" rel="noopener" tabindex="-1">${c[0]}</a>`).join('');
+// layout pattern: wide, normal...
+const layout=['','','wide','','','','','','','','','',''];
+const reds=new Set([0,2,10]);
+$('#mag').innerHTML=C.map((c,i)=>{
+  const img=c[5]?`<figure class="duo zoom"><img src="img/${c[5]}.jpg" alt="${c[6]}" loading="lazy" decoding="async" width="1200" height="800"></figure>`:'';
+  const meta=`<span class="mono"><b>${T[c[2]]}</b>${c[1]?`<time datetime="${c[1]}">${fmt(c[1])}</time>`:`<span>${c[7]}</span>`}</span>`;
+  const body=`${meta}<h3>${c[0]}</h3><p>${c[3]}</p><span class="go">${c[7]==='Vatan'?'Yeniemlak\'ta oku':c[7]?c[7]+'\'ta oku':'Cumhuriyet\'te oku'} ${arrow}</span>`;
+  const cls=['art','reveal',layout[i]||'',c[5]?'':'txtonly',reds.has(i)?'red':''].join(' ');
+  return layout[i]==='wide'?`<a class="${cls}" data-t="${c[2]}" href="${href(c)}" target="_blank" rel="noopener">${img}<div class="txt">${body}</div></a>`
+    :`<a class="${cls}" data-t="${c[2]}" href="${href(c)}" target="_blank" rel="noopener">${img}${body}</a>`;
+}).join('');
+
+/* TV appearances (titles verified via YouTube oEmbed) */
+const V=[
+ ['q4EMD1rLooc','Bloomberg HT · 2015','Gündem Emlak: Ceren Kumbasar'],
+ ['FEBP3CotM7s','Sözcü TV · 2024','Para Politika: Seçime 5 gün kala piyasalar'],
+ ['4IEawNyHnHc','TELE1','Meclis\'te Süryanice konuşan vekile atılan gülüş'],
+ ['Td-Fxo1DnVc','Halk TV','Saraçhane\'nin perde arkası'],
+ ['xLsz9IIUP7o','Cumhuriyet TV','Sandıkta patlama olacak mı?'],
+ ['oKpgMtYmlAM','Meltem TV','Muhalefeti tuzağa düşürecek seçim sistemi?'],
+ ['KW1UIMKHSA8','Meltem TV','Diyarbakır\'da Öcalan\'ın bir karşılığı yok'],
+ ['cyPHNXewOJQ','Meltem TV','Fon krizi: AKP içi hesaplaşma mı?'],
+];
+$('#vids').innerHTML=V.map(v=>`<a class="vid" href="https://www.youtube.com/watch?v=${v[0]}" target="_blank" rel="noopener"><figure class="duo zoom"><img src="https://i.ytimg.com/vi/${v[0]}/mqdefault.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"></figure><span class="mono">${v[1]}</span><b>${v[2]}</b></a>`).join('');
+
+/* projects as classifieds */
+const P=[
+ ['Batı Şehir','karma','Bağcılar, İstanbul',{Değer:'700 milyon USD',Büyüklük:'3.123 konut',Tasarım:'Bünyamin Derman',Konsept:'Avrupa\'nın en büyük karma projesi'},'en<br>büyük!'],
+ ['Canan Residence','konut','Doğu Ataşehir, İstanbul',{Firma:'Canan Yapı',Büyüklük:'269 konut, 62.500 m²',Mimar:'Adnan Kazmaoğlu',Dönem:'2007–2010',Rolü:'Satış ve pazarlama sorumlusu'},'satış &amp;<br>pazarlama'],
+ ['Avcılar Modeli','donusum','Avcılar, İstanbul',{Kurum:'AVBEL A.Ş.',Rolü:'Genel müdür yardımcısı',Kapsam:'Depreme yönelik kentsel dönüşüm'}],
+ ['Sinpaş Bosphorus City','karma','Küçükçekmece',{Konsept:'Karma proje'}],
+ ['Sakura Park','villa','Yalova',{Büyüklük:'74 villa',Konsept:'Villa rezidanslar'}],
+ ['İz Tower','konut','Kartal',{Büyüklük:'168 rezidans',Tasarım:'Nusret Albayrak'}],
+ ['İz Park','karma','Kartal',{Konsept:'Karma proje'}],
+ ['Sinpaş İstanbul Palace','',''],['Asia Gold Center','',''],['Han Plus','',''],
+ ['İncity','',''],['Istanblue','',''],['My Country','',''],['My World','',''],['My Town','',''],['Sealybria','',''],['Marenegro','',''],
+];
+const L={karma:'Karma',konut:'Konut',villa:'Villa',donusum:'Dönüşüm'};
+$('#ilanList').innerHTML=P.map((p,i)=>{
+  const d=Object.entries(p[3]||{}).map(([k,v])=>`<dt>${k}</dt><dd>${v}</dd>`).join('');
+  return `<article class="ilan${p[4]?' big':''}" data-t="${p[1]}"><span class="mono"><span>No. ${String(i+1).padStart(2,'0')}</span><span>${L[p[1]]||'Portföy'}</span></span>${p[4]?`<span class="stamp">${p[4]}</span>`:''}<h3>${p[0]}</h3>${p[2]?`<span class="loc">${p[2]}</span>`:''}${d?`<dl>${d}</dl>`:''}</article>`;
+}).join('')+`<a class="ilan ad" href="#iletisim" data-t="ad"><span class="mono"><span>No. ${String(P.length+1).padStart(2,'0')}</span><span>Sıradaki</span></span><h3>Sizin projeniz?</h3><span class="loc">Konsept, strateji, satış.</span><span class="hand" style="font-size:24px;color:var(--red);margin-top:auto">bize yazın →</span></a>`;
+
+function filt(g,sel){g.addEventListener('click',e=>{const c=e.target.closest('.chip');if(!c)return;$$('.chip',g).forEach(x=>x.setAttribute('aria-pressed',x===c));const f=c.dataset.f;$$(sel).forEach(it=>it.classList.toggle('hide',f!=='all'&&it.dataset.t!==f&&it.dataset.t!=='ad'))})}
+filt($('#pChips'),'.ilan');filt($('#cChips'),'.art');
+
+/* skill cloud */
+const K=[
+ ['Araştırma','Fizibilite','Pazara giriş analizleri ve fizibilite çalışmalarıyla projenin daha temeli atılmadan doğru soruları sormak.'],
+ ['Tasarım','Konsept','Projenin kimliği, hedef kitlesi ve dili. Bir binayı bir yaşam fikrine dönüştürmek.'],
+ ['Anlatı','Hikâye','Oyunculuk ve beden dili eğitiminden gelen sezgi: insanlar metrekareyi değil, hikâyeyi satın alır.'],
+ ['Operasyon','Satış yönetimi','Satış ofisi kurgusu, ekip ve süreç yönetimi; satışın sahnede nasıl oynanacağı.'],
+ ['Yazı','Şehircilik','Köşe yazılarının ortak derdi: Ihlamur, Gezi, Harbiye. Şehrin kamusal alanı ve ruhu.'],
+ ['İletişim','Medya planlama','Reklam, medya planlama ve yerleştirme; mesajın doğru yerde, doğru zamanda duyulması.'],
+ ['Yön','Strateji','Pazarlama, marka ve satışı tek bir yol haritasında birleştirmek.'],
+ ['Siyaset','Siyasi iletişim','2023\'ten bu yana dijital ve sosyal medya politikaları üzerine stratejistlik.'],
+ ['Aktarım','Eğitim','2008\'den beri gayrimenkul satışı eğitimleri; 300\'ü aşkın mezun.'],
+ ['Uluslararası','Yatırımcı','2007\'den beri yabancı yatırımcıyı Türkiye\'ye çekmek; Orta Doğu ve Körfez projeleri.'],
+ ['İlişkiler','Kamu ilişkileri','Basın, kamu kurumları ve yerel yönetimlerle köprüler kurmak.'],
+];
+$('#cloud').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;$$('#cloud button').forEach(x=>x.setAttribute('aria-pressed',x===b));const k=K[b.dataset.k];$('#cnK').textContent=k[0];$('#cnT').textContent=k[1];$('#cnP').textContent=k[2]});
+$$('#cloud button').forEach(b=>b.setAttribute('aria-pressed','false'));
+
+/* draggable polaroids */
+$$('[data-drag]').forEach(el=>{
+  let sx,sy,ox=0,oy=0,id=null;
+  el.addEventListener('pointerdown',e=>{id=e.pointerId;el.setPointerCapture(id);sx=e.clientX-ox;sy=e.clientY-oy;el.style.zIndex=5;$$('[data-drag]').forEach(o=>o!==el&&(o.style.zIndex=1))});
+  el.addEventListener('pointermove',e=>{if(e.pointerId!==id)return;const box=$('#scrap').getBoundingClientRect();ox=Math.max(-box.width*.4,Math.min(box.width*.4,e.clientX-sx));oy=Math.max(-160,Math.min(200,e.clientY-sy));el.style.translate=`${ox}px ${oy}px`});
+  const up=()=>{id=null};el.addEventListener('pointerup',up);el.addEventListener('pointercancel',up);
+});
+
+/* credits */
+fetch('img/credits.json').then(r=>r.json()).then(c=>{
+  $('#credits').innerHTML='Fotoğraflar: '+Object.values(c).map(v=>`<a href="${v.page}" target="_blank" rel="noopener">${v.artist.replace(/ from .*/,'')}</a> (${v.license})`).join(', ')+', Wikimedia Commons. Portreler Ceren Kumbasar Mumay’ın X/Instagram hesaplarından, PowerUp Academy’den ve basından; video kapakları YouTube’dan; ödül fotoğrafı Instagram’dan.';
+}).catch(()=>{$('#credits').textContent='Şehir fotoğrafları: Wikimedia Commons (CC lisansları).'});
+
+/* reveal */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
+const watch=()=>$$('.reveal:not(.in)').forEach(el=>io.observe(el));watch();
+
+/* counter */
+const bn=$('[data-count]');
+new IntersectionObserver(([e],o)=>{if(!e.isIntersecting)return;o.disconnect();const to=+bn.dataset.count;if(reduce){bn.textContent=to+'+';return}
+  const t0=performance.now();(function f(t){const k=Math.min(1,(t-t0)/1500);bn.textContent=Math.round(to*(1-Math.pow(1-k,4)))+(k===1?'+':'');if(k<1)requestAnimationFrame(f)})(t0)},{threshold:.5}).observe(bn);
+
+/* scroll */
+const nav=$('#nav'),prog=$('#progress'),secs=['hakkinda','arsiv','sahne','ilanlar','yazilar','iletisim'].map(i=>document.getElementById(i));
+let tk=false;
+function sc(){const y=scrollY,h=root.scrollHeight-innerHeight;prog.style.transform=`scaleX(${h>0?y/h:0})`;nav.classList.toggle('stuck',y>$('.mast').offsetTop+$('.mast').offsetHeight-60);
+  let cur=null;secs.forEach(s=>{if(s.getBoundingClientRect().top<innerHeight*.35)cur=s.id});$$('#menu a').forEach(a=>a.classList.toggle('active',a.hash==='#'+cur));tk=false}
+addEventListener('scroll',()=>{if(!tk){tk=true;requestAnimationFrame(sc)}},{passive:true});sc();
+
+/* copy */
+$('#copy').onclick=async()=>{const m=$('#mail').dataset.mail,t=$('#toast');try{await navigator.clipboard.writeText(m);t.textContent='Kopyalandı ✓'}catch(e){t.textContent=m}t.classList.add('on');setTimeout(()=>t.classList.remove('on'),2000)};
+})();
+</script>
+</body>
+</html>
